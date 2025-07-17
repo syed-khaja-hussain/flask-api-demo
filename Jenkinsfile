@@ -6,11 +6,11 @@ pipeline {
     }
 
     stages {
-        stage('Clone') {
-            steps {
-                git 'https://github.com/syed-khaja-hussain/flask-api-demo.git' // replace with your Git repo
-            }
-        }
+       stage('Clone') {
+    steps {
+        git branch: 'main', url: 'https://github.com/syed-khaja-hussain/flask-api-demo.git'
+    }
+}
 
         stage('Build Docker Image') {
             steps {
