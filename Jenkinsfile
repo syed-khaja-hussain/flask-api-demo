@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://gitlab.com/your-username/flask-api-demo.git' // replace with your Git repo
+                git 'https://github.com/syed-khaja-hussain/flask-api-demo.git' // replace with your Git repo
             }
         }
 
